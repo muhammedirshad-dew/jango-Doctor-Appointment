@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<div class="container my-3">
+    <h1 class="text-center mb-4">About Our Hospital</h1>
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h2>Welcome to HealthBridge</h2>
+            <p class="lead">Your trusted partner in health and wellness for over two decades. We are dedicated to providing compassionate, high-quality healthcare services to our community.</p>
+            <p>Our journey began with a simple mission: to make excellent healthcare accessible to everyone. Today, we are a multi-specialty hospital equipped with state-of-the-art technology and staffed by a team of dedicated and experienced medical professionals.</p>
+            <h3>Our Mission</h3>
+            <p>To deliver patient-centered healthcare with excellence in quality, service, and access. We are committed to the well-being of our patients and the community we serve.</p>
+            <h3>Our Vision</h3>
+            <p>To be a leading healthcare provider known for our clinical excellence, innovative spirit, and unwavering commitment to improving the health of our community.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/image-2.jpg' %}" class="img-fluid rounded shadow" alt="Our Hospital Building">
+        </div>
+    </div>
+</div>
+{% endblock %}

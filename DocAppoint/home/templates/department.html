@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Departments{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center mb-4">Our Departments</h1>
+    <p class="text-center text-muted mb-5">We offer a wide range of specialized medical departments to cater to all your health needs. Each department is staffed by a team of experienced and dedicated professionals.</p>
+    
+    <div class="row">
+        {% if dept %}
+            {% for d in dept %}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white">
+                        <h5 class="mb-0">{{ d.dep_name }}</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">{{ d.dep_description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="col">
+                <p class="text-center">No departments available at the moment. Please check back later.</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

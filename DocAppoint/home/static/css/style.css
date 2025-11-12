@@ -1,0 +1,41 @@
+/* li:hover{
+    background-color: blue;
+    border-radius: 10px;
+} */
+body {
+  padding-top: 60px !important;
+}
+.navbar .nav-link {
+  color: #234868 !important;
+}
+.navbar .nav-link:hover {
+  color: black !important;
+}
+
+.logo-img {
+  width: 30%; /* or any size you like */
+  height: auto;
+  margin-bottom: 5%;
+}
+.logo-text {
+  color: #234868;
+  cursor: pointer;
+}
+
+/* .carousel{
+    padding-top: 70px;
+} */
+.carousel-img {
+  height: 20%;
+  object-fit: cover;
+}
+
+footer {
+  color: #234868;
+}
+.btn {
+background-color: #234868;
+}
+.card-header{
+  background-color: #234868;
+}
